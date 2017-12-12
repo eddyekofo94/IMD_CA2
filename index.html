@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eddy Ekofo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap-reboot.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <script src="assets/vendors/jquery/jquery.min.js"></script>
+      <script src="assets/js/vendor/TweenMax.js"></script>
+      <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">-->
+      <script src="assets/vendors/jquery-bgswitcher-master/jquery.bgswitcher.js"></script>
+
+      <link rel="stylesheet" href="assets/css/vendors/toastr.min.css">
+
+      <link rel="stylesheet"
+            href="assets/vendors/jQuery-Progress-Bar-Plugin-LineProgressbar/jquery.lineProgressbar.css">
+      <script src="assets/vendors/jQuery-Progress-Bar-Plugin-LineProgressbar/jquery.lineProgressbar.js"></script>
+
+      <!--<link rel="stylesheet" href="assets/vendors/MDB Free/css/toastr.min.css">-->
+
+
+      <!-- Custom styles for this template -->
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Eddy Ekofo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input type="text" placeholder="Search..." class="form-control"/>
+                    <span class="input-group-addon">
+        <i class="fa fa-search"></i>
+    </span>
+                </div>
+            </form>
+        </div>
+      </div>
+    </nav>
+
+    <header  id="header" class="text-black container-fluid">
+        <div name="fullBackground" id="fullBackground" class="fullBackground">
+        </div>
+        <div class="overlay"></div>
+        <div class="overlay"></div>
+        <!--<div class="overlay fade-bottom"></div>-->
+      <div class="container text-center  container-fluid">
+          <h1 class="title" ><span class="thin">Eddy</span> Ekofo</h1>
+          <div class="btn-group align-middle d-flex justify-content-center">
+              <a class="btn btn-secondary" href="./assets/other/Eddy_Ekofo_CV_final.docx">CV</a>
+              <a href="#myModal" data-toggle="modal" class="btn btn-secondary">Contact </a>
+          </div>
+          <div class="container">
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <!--<div class="modal-header">-->
+                              <button type="button" class="close full-left" data-dismiss="modal" aria-hidden="true">x</button>
+                              <h2 class="modal-title">Get in touch!</h2>
+                          <!--</div>-->
+                          <form>
+                              <div class="group">
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Name</label>
+                              </div>
+
+                              <div class="group">
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Email</label>
+                              </div>
+
+                              <div class="group">
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Mobile No</label>
+                              </div>
+
+                              <div class="group">
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Message</label>
+                              </div>
+                          </form>
+                          <div class="btn-group-lg modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button id="alert-target" type="button"  onclick="toastr.success('Thank you!', 'Message sent, I will contact you later.');" class="btn btn-success">Send<span class="glyphicon glyphicon-send"></span></button>
+                          </div>
+                      </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+
+
+          </div>
+          <ul class="list-inline">
+              <li class="list-inline-item">
+                  <a href="https://twitter.com/EddyEkofo" target="_blank" class="btn btn-lg btn-light btn-just-icon">
+                      <i class="fa fa-twitter"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="https://github.com/eddyekofo94" target="_blank" class="btn btn-lg btn-light btn-just-icon">
+                      <i class="fa fa-github-alt"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/eddyekofo/" target="_blank" class="btn btn-lg btn-light btn-just-icon">
+                      <i class="fa fa-linkedin"></i>
+                  </a>
+              </li>
+          </ul>
+          <div class="terminal">
+              <h1 id="typed-strings">
+                  <!--<p> ></p>-->
+                  <p>
+                      <a class="prompt">></a> Hi!^1500, this is
+                      <strong>Eddy Ekofo</strong>.^1000 Welcome to my website.^1000
+                  </p>
+
+
+                  <p>
+                      <a class="prompt">></a> I am a
+                      <em>Software Developer</em>^1500 .^1000.^1500. emm ^1500 and a Christian,^1000 a Baptist to be
+                      specific.^5000 😎</p>
+              </h1>
+              <span id="typedDesktop" class="sub-title"></span>
+          </div>
+        <!--<h1>Eddy Ekofo</h1>-->
+      </div>
+
+        <!--<canvas id="particles-canvas"></canvas>-->
+    </header>
+
+    <section id="about">
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2 class="heading">About</h2>
+              <img id="profile-pic" class="col-md-4 img-fluid" src="assets/img/me3.jpg">
+              <p class=" align-content-around">
+                Hello again, I am Eddy Ekofo, A Christian, software developer and Computer Science Student.
+                I make websites and love reading books, especially the old classic Christian literature.
+                I am a Congolese Irish man, a weird combination, I know. look around and contact me for more. God bless.
+            </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills bg-light">
+        <div class="skills-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8  mx-auto">
+             <h2>Skills</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified indigo" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab"
+                               href="#programming" id="programming-tab" role="tab"><i class="fa fa-code"></i> Programming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab"
+                               href="#spoken-languages" id="spoken-lang-tab" role="tab"><i class="fa fa-language"></i> Spoken languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#other"
+                               role="tab"><i class="fa fa-info"></i> Other</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="programming" role="tabpanel">
+                            Java: <div id="java"></div>
+                            C#: <div id="c-sharp"></div>
+                            Python: <div id="python"></div>
+                            C++: <div id="cpp"></div>
+                            JavaScript: <div id="js"></div>
+                            TypeScript: <div id="typescript"></div>
+                            ShellScript: <div id="shell"></div>
+
+                        </div>
+
+                        <!--/.Panel 1-->
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="spoken-languages" role="tabpanel">
+                            English: <div id="en"></div>
+                            French: <div id="fr"></div>
+                            Lingala: <div id="li"></div>
+                        </div>
+                        <!--/.Panel 2-->
+                        <!--Panel 3-->
+                        <div class="tab-pane fade" id="other" role="tabpanel">
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                        </div>
+                        <!--/.Panel 3-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Education</h2>
+                    <h3>ITTD: Bachelor in Computer Science</h3>
+                    <ul id="tabsJustified" class="nav nav-tabs">
+                        <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab" class="nav-link small text-uppercase">4th</a></li>
+                        <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab" class="nav-link small text-uppercase active">3rd</a></li>
+                        <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab" class="nav-link small text-uppercase">2nd</a></li>
+                        <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab" class="nav-link small text-uppercase">1st</a></li>
+                    </ul>
+                    <br>
+                    <div id="tabsJustifiedContent" class="tab-content">
+                        <div id="home1" class="tab-pane fade">
+                            <div class="list-group"><a href=""
+                                                       class="list-group-item d-inline-block">
+                                <span class="float-right badge badge-pill badge-dark">51</span> Home Link</a> <a href="" class="list-group-item d-inline-block"><span class="float-right badge badge-pill badge-dark">8</span> Link 2</a>                            <a href="" class="list-group-item d-inline-block"><span class="float-right badge badge-pill badge-dark">23</span> Link 3</a> <a href="" class="list-group-item d-inline-block text-muted">Link n..</a></div>
+                        </div>
+                        <div id="profile1" class="tab-pane fade active show">
+                            <div class="row pb-2">
+                                <div class="list-group col-12"><a href="" class="list-group-item d-inline-block">
+                                    <span class="float-right badge badge-pill badge-dark">B</span>ADB</a>
+                                    <a href="" class="list-group-item d-inline-block">
+                                    <span class="float-right badge badge-pill badge-dark">C+
+                                    </span> ADS 1</a>
+                                    <a href="" class="list-group-item d-inline-block">
+                                        <span class="float-right badge badge-pill badge-dark">C</span>
+                                        WDD 2</a>
+                                    <a href="" class="list-group-item d-inline-block">
+                                        <span class="float-right badge badge-pill badge-dark">B</span>
+                                        Innovation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="messages1" class="tab-pane fade">
+                            <div class="list-group col-12"><a href="" class="list-group-item d-inline-block">
+                                <span class="float-right badge badge-pill badge-dark">B</span>ADB</a>
+                                <a href="" class="list-group-item d-inline-block">
+                                    <span class="float-right badge badge-pill badge-dark">C+
+                                    </span> ADS 1</a>
+                                <a href="" class="list-group-item d-inline-block">
+                                    <span class="float-right badge badge-pill badge-dark">C</span>
+                                    WDD 2</a>
+                                <a href="" class="list-group-item d-inline-block">
+                                    <span class="float-right badge badge-pill badge-dark">B</span>
+                                    Innovation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-light">
+        <div class="experience-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Experience</h2>
+              <h1>My Expereinces</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact us</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--</div>-->
+  <!--</div>-->
+    <!-- Footer -->
+    <footer class="py-5 bg-transparent">
+      <div class="container">
+        <p class="m-0 text-center text-black">Copyright &copy; Eddy Ekofo 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+<!--Snow Js, Adds, the now effect-->
+    <script>
+
+        $(document).ready( function(){
+//            $('.barChart').barChart();
+//            slideshow
+            $("#fullBackground").bgswitcher({
+                images: ["./assets/img/winter-2.jpg",
+                    "./assets/img/winter-14.jpg",
+                    "./assets/img/winter-7.jpg",
+                    "./assets/img/winter-11.jpg",
+                    "./assets/img/winter-12.jpg",
+                ],
+                interval: 50000,
+                shuffle: true,
+                duration: 8000
+        });
+
+//            terminal
+            var typed = new Typed('#typedDesktop', {
+                stringsElement: '#typed-strings',
+                typeSpeed: 80,
+                backDelay: 1000,
+                backSpeed: 10,
+                smartBackspace: true,
+            });
+//            snow effect
+            $.fn.snow({ minSize: 1, maxSize: 7, newOn: 300, flakeColor: "#ddfaff" });
+            $('#contactMe').modal('show');
+        });
+
+    </script>
+    <script src="assets/js/vendor/snow.js"></script>
+    <script src="assets/js/vendor/jquery.snow.js"></script>
+  <!--<script src="assets/js/vendor/particles.js"></script>-->
+  <script src="assets/js/vendor/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <!--<script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>-->
+    <!-- Plugin JavaScript -->
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/vendor/toastr.min.js"></script>
+  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>-->
+    <!-- Custom JavaScript for this theme -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendors/jQuery-Progress-Bar-Plugin-LineProgressbar/jquery.lineProgressbar.js"></script>
+    <script src="assets/vendors/jquery-easing/jquery.easing.js"></script>
+    <!--<script src="assets/vendors/jquery-easing/jquery.easing.compatibility.js"></script>-->
+    <!--<script src="assets/vendors/bootstrap/js/bootstrap.js"></script>-->
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>-->
+    <!--<script src="assets/vendors/MDB Free/js/mdb.js"></script>-->
+  </body>
+
+</html>

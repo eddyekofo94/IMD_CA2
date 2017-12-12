@@ -1,0 +1,70 @@
+@import "compass/css3";
+
+// Mixins
+
+@mixin prefix ($property, $value,
+                 $moz:    true,
+                 $webkit: true,
+                 $o:      false,
+                 $ms:     true,
+                 $spec:   true) {
+  @if $moz    {    -moz-#{$property}: $value; }
+  @if $webkit { -webkit-#{$property}: $value; }
+  @if $o      {      -o-#{$property}: $value; }
+  @if $ms     {     -ms-#{$property}: $value; }
+  @if $spec   {         #{$property}: $value; }
+}
+
+// Animations
+
+@keyframes bar-fill {
+  0% { width: 0; }
+}
+@-webkit-keyframes bar-fill {
+  0% { width: 0; }
+}
+@-moz-keyframes bar-fill {
+  0% { width: 0; }
+}
+@-o-keyframes bar-fill {
+  0% { width: 0; }
+}
+
+// Graph stuff
+
+.bar-graph {
+  list-style: none;
+  margin: 50px 0px auto;
+}
+
+.bar-wrap {
+  @include prefix(border-radius,10px 10px 10px 10px);
+  background-color: rgba(0, 155, 202, 0.2);
+  border: 1px solid rgba(0, 155, 202, 0.8);
+  margin-bottom: 10px;
+}
+
+.bar-fill {
+  @include prefix(border-radius,10px 10px 10px 10px);
+  @include prefix(animation, bar-fill 1s);
+  background-color: rgba(0, 155, 202,1);
+  display: block;
+  height: 15px;
+  width: 0px;
+}
+
+// General stuff
+
+body {
+  background-color: #000;
+}
+
+p {
+  color: rgba(0, 155, 202,1);
+  font: {
+    family: 'Helvetica';
+    size: 16px;
+    weight: 100;
+  }
+  text-transform: uppercase;
+}

@@ -1,0 +1,706 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+/*
+  Colour pallete
+1:
+ Red: AA1111	White: FFFFFF	Gray: EBEBEB	Black000000
+
+This one instead:
+
+Hex: #000000
+RGB: 0, 0, 0
+CMYK: 0, 0, 0, 100
+HSV: 0, 0, 0
+000000
+black
+
+Hex: #FFFFFF
+RGB: 255, 255, 255
+CMYK: 0, 0, 0, 0
+HSV: 0, 0, 100
+FFFFFF
+white
+
+ E18A07.png
+Hex: #E18A07
+RGB: 225, 138, 7
+CMYK: 0, 38.7, 96.9, 11.8
+HSV: 36, 97, 88
+E18A07
+orange
+tahiti gold
+
+
+ C0C0C0.png
+Hex: #C0C0C0
+RGB: 192, 192, 192
+CMYK: 0, 0, 0, 24.7
+HSV: 0, 0, 75
+C0C0C0
+gray
+grey
+silver
+
+  */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html{
+    /*background-color: rgba(255, 255, 255, 0.53);*/
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    /*min-height: 100% !important;*/
+    /*background-color: white;*/
+    background-color: rgba(255, 255, 255, 0.43) !important;
+}
+header .btn{
+    background-color: rgba(226, 226, 226, 0.83) !important;
+    color: black;
+}
+
+header .modal{
+    box-sizing: border-box;
+    /*background-color: red;*/
+}
+
+/* form starting stylings ------------------------------- */
+header .group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+header .modal input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0b0700;
+    background: transparent;
+}
+
+    /* LABEL ======================================= */
+header .modal label {
+    color: #0f0f0f;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+/* active state */
+header .modal input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #000;
+
+}
+
+header .modal .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #000;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+ /* active state */
+header .modal input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #0b0700;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #0b0700;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #0b0700;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+#panel {
+    border: 1px solid rgba(11, 7, 0, 0.66);
+    box-shadow: rgba(152, 152, 152, 0.1) 0px 5px 5px 2px;
+    background: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+    background: #0b0700; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, rgba(67, 67, 67, 0.93) 0%, #a6a6a6 100%); /* Standard syntax (must be last) */
+
+
+    /*border-radius: 4px;*/
+    top: 50px;
+}
+
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+
+
+header .modal input:focus {
+    outline: none;
+}
+
+header h2{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 1em;
+    color: #fff;
+}
+
+header .modal-content{
+    /*background-color: orange;*/
+    padding:1.5em;
+    background: linear-gradient(rgba(255, 255, 255, 0.53), rgba(255, 255, 255, 0.93));
+    /*color: red;*/
+}
+
+header .btn:hover {
+    background-color: rgba(255, 255, 255, 0.47) !important;
+    color: black;
+}
+
+header .btn:visited{
+    color: rgba(11, 7, 0, 0.89);
+}
+
+header .btn-group{
+    text-transform: uppercase;
+    /*background-color: red !important;*/
+    padding-bottom: 2em;
+}
+header {
+    padding-top: 1.5em;
+    min-height: 100% !important;
+    background:  linear-gradient( rgba(255,0,0,0), rgba(255,255,255,255)) center center fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: right !important;
+}
+
+@media (min-width: 992px) {
+    header {
+        min-height: 100vh;
+        /*padding: 156px 0 100px;*/
+    }
+}
+
+#header h1{
+    font-size: 3em;
+    text-rendering: optimizeLegibility;
+    background: fixed;
+    font-weight: 700;
+    /*z-index: 999;*/
+    letter-spacing: 0.1em;
+    /* centering  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+#header span.thin {
+    font-weight: 200; !important;}
+
+section {
+    width: 100%;
+    padding: 2em;
+    /*height: 50% !important;*/
+    padding-bottom:10vh !important;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /*width: 100%;*/
+    height:100%;
+    min-height: 100% !important;
+    /*height: 100vh;*/
+}
+
+/* Background image change */
+#fullBackground {
+    background-size: 100% 100%;
+    background-position: center center;
+    position: absolute;
+    z-index: -15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+/*background animation*/
+
+
+/*  end of animations for the header */
+
+#fullBackground img {
+    overflow: hidden;
+    background: fixed;
+    /*background-blend-mode: overlay;*/
+    /*background: center center fixed;*/
+    /*background-attachment: fixed;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    transition: opacity .6s ease-in !important;
+}
+
+.overlay{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: overlay;
+    position: absolute;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    /*animation: transition 30s ;*/
+    background: linear-gradient(rgba(255,0,0,0), rgba(255,255,255,255));
+    /*background: linear-gradient(transparent, white); !* Standard syntax *!*/
+    -webkit-animation:linear infinite alternate;
+    -webkit-animation-name: movedown;
+    -webkit-animation-duration: 20s; /*50s*/
+    animation-delay: 2s;
+    /*background: linear-gradient(45deg, rgba(21, 21, 21, 0.66) 0%, rgba(133, 133, 133, 0.45) 100%);*/
+}
+
+/*#pot{bottom:15%;*/
+    /*position:absolute;*/
+    /*-webkit-animation:linear infinite alternate;*/
+    /*-webkit-animation-name: move;*/
+    /*-webkit-animation-duration: 200s;*/
+/*}*/
+@-webkit-keyframes movedown {
+    0% { top: 100%;}
+    50%{ bottom : 50%;}
+    100%{ top: 0%;}
+}
+
+
+
+
+/*0%   {background: red; left: 0px; top: 0px;}*/
+/*25%  {background: yellow; left: 200px; top: 0px;}*/
+/*50%  {background: blue; left: 200px; top: 200px;}*/
+/*75%  {background: green; left: 0px; top: 200px;}*/
+/*100% {background: red; left: 0px; top: 0px;}*/
+
+@-webkit-keyframes movearound {
+    0% {
+        top: -100%;
+        left: -20%;
+    }
+    25% {
+        top:20%;
+        left: 30%;
+
+    }
+
+    50%  {
+        left: 60%; top: 50%
+    }
+
+    75%  {
+        left: 70%; top: 65%
+    }
+
+    100%{
+        top: 100%;
+        left: 90%;
+        bottom: -10px;
+    }
+}
+
+
+/* Navbar */
+
+/* change navbar background */
+/*nav.navbar {*/
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+    /*background: #000000 !important;*/
+    /*opacity: .9;}*/
+
+.navbar-default:not(.navbar-transparent) .navbar-nav > li > a.btn.btn-white.btn-simple {
+    color: #555555;
+}
+
+.navbar {
+    background: linear-gradient(rgba(255,255,255,255),rgba(255,0,0,0));
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    padding-top: 3em;
+    border-radius: 0;
+}
+
+/* change navbar-brand color */
+.navbar a.navbar-brand {
+    color: #000;
+
+}
+/* change navbar-brand color on hover */
+.navbar a.navbar-brand:hover {
+    color: #E18A07;
+}
+
+/*  change navbar li colors, also active one but not disabled one */
+.navbar ul.navbar-nav li.nav-item a{
+    color: #000;
+    /*opacity: .9;*/
+}
+
+.navbar ul.navbar-nav li.nav-item:hover a{
+    color: #E18A07;
+}
+
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+    border-color: #E18A07;
+}
+
+section img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray;
+    /* IE5+ */
+    -webkit-filter: grayscale(1);
+    /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .6s ease-in-out; }
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01); }
+
+.fade-bottom{
+    /*background-color: red;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*top: 75%;*/
+    /*z-index: 100;*/
+    background-size: cover;
+    /*opacity: .3;*/
+    background-position: center center;
+    /*animation: transition 30s ;*/
+    background: center radial-gradient(rgba(255, 247, 241, 0.91) 5%, rgba(243, 243, 243, 0.86) 15%, transparent 60%); /* Standard syntax */
+
+    /*background: radial-gradient(rgba(255,255,255,255),rgba(255,0,0,0));*/
+    /*background: linear-gradient(transparent, white); !* Standard syntax *!*/
+    -webkit-animation:ease-in-out infinite alternate;
+    -webkit-animation-name: frostbottom;
+    -webkit-animation-duration: 20s; /*50s*/
+}
+
+@-webkit-keyframes frostbottom {
+    0% { top: 0%;}
+    50%{ bottom : 50%;}
+    100%{ top: 50%;}
+}
+
+.terminal {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position: absolute;
+    top: 60%;
+    clear: both;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5em;
+    text-rendering: optimizeLegibility;
+    /*color: #f9f9f9; */
+    color: #000;
+}
+
+.typed-strings {
+    padding: 0;
+    margin: 0;
+    width: auto; }
+
+.typed-cursor {
+    /*margin-left: 0%;*/
+    color: orange;
+    font-size: 32px;
+    -webkit-animation-name: bash;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-name: bash;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    /*padding-left: 2em;*/
+    /*animation: blinker 1s linear infinite;*/ }
+
+.terminal b {
+    -webkit-animation-name: bash;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-name: bash;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes "bash" {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes "bash" {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* about section */
+
+#about{
+    margin-top: 0;
+    padding: 2em;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: white;
+    /*height: 100%;*/
+}
+
+/*#about img*/
+
+#about img{
+    width: 14em;
+    border-radius: 50%;
+    float: left;
+    clear: both;
+    justify-content:center !important;
+    align-items: center !important
+}
+
+.heading{
+    text-align: center !important;
+    padding: .5em;
+}
+
+
+/* skills section  */
+#skills{
+    background: center url("../img/code.jpg") fixed;
+overflow: hidden;
+    background-color: #0f0f0f;
+    background-position: center center;
+    background-size: cover;
+    height: 100% !important;
+    min-height: 100vh !important;
+    /*height: 100%;*/
+    padding: 0;
+    box-sizing: border-box;
+    /*margin-bottom: 1.5em;*/
+    /*padding: 2.5em;*/
+
+}
+
+#skills img{
+    z-index: -2;
+}
+#skills .skills-overlay{
+    width: 100%;
+    padding: 0 !important;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.64) 100%); /* Standard syntax (must be last) */
+    /*box-sizing: border-box;*/
+    /*right: 0;*/
+    z-index: 0;
+    min-height: 100vh !important;
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+}
+section h2{
+    text-align: center;
+    padding: 1.5em;
+}
+#skills a{
+    color: #0f0f0f;
+}
+
+#skills .tab-content{
+    z-index: 5;
+}
+
+
+
+/* skills finish here */
+
+/* Education Start  */
+#education{
+    min-height: 60vh !important;
+    width: 100%;
+    color: #0f0f0f !important;
+}
+
+#education a{
+    color: #0f0f0f;
+}
+#education h3{
+    padding: .5em;
+}
+
+
+/*  Education finished*/
+
+/*  Experience Start */
+
+#experience{
+    width: 100%;
+    /*min-height: 100vh;*/
+    background: url("../img/mac-pro.jpg") fixed;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    background-position: center center;
+    /*background-size: cover;*/
+    height: 100% !important;
+    min-height: 50vh !important;
+    /*height: 100%;*/
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#experience .experience-overlay{
+    width: 100%;
+    padding: 0 !important;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.64) 100%); /* Standard syntax (must be last) */
+    z-index: 0;
+    /*height: 100%;*/
+    height: inherit !important;
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Experience finish*/
+
+header #fullBackground{
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden !important;
+    /*height:150px;*/
+    width:100%;
+    /*animation:move 120s infinite ease-in-out;*/
+}
+
+@keyframes move{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    100%{
+        transform: scale(2) rotate(0.1deg);
+
+    }
+}
+
