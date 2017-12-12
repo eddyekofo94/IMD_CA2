@@ -563,7 +563,7 @@ img:hover {
     width: 100%;
     height: 50%;
     position: relative;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.54);
     /*height: 100%;*/
 }
 
@@ -591,7 +591,7 @@ overflow: hidden;
     background-color: #0f0f0f;
     background-position: center center;
     background-size: cover;
-    height: 100% !important;
+    /*height: 100% !important;*/
     min-height: 100vh !important;
     /*height: 100%;*/
     padding: 0;
@@ -658,15 +658,21 @@ section h2{
     background: url("../img/mac-pro.jpg") fixed;
     background-size: cover;
     overflow: hidden;
+    color: #0f0f0f;
     background-color: #0f0f0f;
     background-position: center center;
     /*background-size: cover;*/
     height: 100% !important;
-    min-height: 50vh !important;
+    min-height: 100vh !important;
     /*height: 100%;*/
     padding: 0;
     box-sizing: border-box;
 
+}
+#experience .carousel{
+    background-color: #fff;
+    min-height: 60vh;
+    padding: 2.3em;
 }
 
 #experience .experience-overlay{
@@ -705,6 +711,16 @@ header #fullBackground{
 #contact .container .btn .btn-secondary {
     color: white !important;
 }
+
+.carousel-inner img {
+    width: 100%;
+    height: 50%;
+}
+
+ #experience .carousel-caption{
+    color: #fff !important;
+}
+
 @keyframes move{
     0%{
         transform: scale(1) rotate(0deg);
