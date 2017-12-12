@@ -694,6 +694,10 @@ header #fullBackground{
     /*animation:move 120s infinite ease-in-out;*/
 }
 
+#contact {
+    text-align: center;
+    color: #E18A07;
+}
 @keyframes move{
     0%{
         transform: scale(1) rotate(0deg);
