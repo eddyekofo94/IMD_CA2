@@ -72,6 +72,10 @@ header .modal{
     /*background-color: red;*/
 }
 
+header canvas{
+    z-index: 7;
+}
+
 /* form starting stylings ------------------------------- */
 header .group {
     position: relative;
@@ -595,10 +599,15 @@ overflow: hidden;
     min-height: 100vh !important;
     /*height: 100%;*/
     padding: 0;
+    /*font-size: 4.5em !important;*/
     box-sizing: border-box;
     /*margin-bottom: 1.5em;*/
     /*padding: 2.5em;*/
 
+}
+
+#skills p{
+    font-size: 16px !important;
 }
 
 #skills img{
@@ -610,6 +619,7 @@ overflow: hidden;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.64) 100%); /* Standard syntax (must be last) */
     /*box-sizing: border-box;*/
     /*right: 0;*/
+    height: 100% !important;
     z-index: 0;
     min-height: 100vh !important;
     background-blend-mode: overlay;

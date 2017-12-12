@@ -94,7 +94,7 @@
             $('#fr').LineProgressbar({
                 percentage: 80,
                 fillBackgroundColor: '#000',
-                backgroundColor: '#EEEEEE',
+                backgroundColor: '#ffffff',
                 radius: '0px',
                 height: '10px',
                 width: '100%'
