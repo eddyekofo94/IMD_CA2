@@ -696,7 +696,14 @@ header #fullBackground{
 
 #contact {
     text-align: center;
-    color: #E18A07;
+    /*color: #E18A07;*/
+}
+/*#contact a{*/
+    /*color: #E18A07;*/
+/*}*/
+
+#contact .container .btn .btn-secondary {
+    color: white !important;
 }
 @keyframes move{
     0%{
