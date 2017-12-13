@@ -177,6 +177,41 @@
         return that;
     })();
 
+    $("#fullBackground").bgswitcher({
+        images: ["./assets/img/winter-16.jpg",
+            "./assets/img/winter-23.jpg",
+            "./assets/img/winter-22.jpg",
+            "./assets/img/winter-17.jpg",
+            "./assets/img/winter-19.jpg",
+            "./assets/img/winter-21.jpg",
+            "./assets/img/winter-20.jpg",
+            "./assets/img/winter-3.jpg",
+        ],
+        interval: 50000,
+        shuffle: true,
+        duration: 8000
+    });
+
+    // terminal
+    var welcomeArray = ["> Hi!^1500, this is\n" +
+    "<strong>Eddy Ekofo</strong>.^1000 Welcome to my website.",
+"> I am a\n" +"<em>Software Developer</em>^1500 .^1000.^1500. emm ^1500 and a Christian,^1000 a Baptist to be\n" +
+"specific.^5000 😎"
+    ];
+
+
+    var typed = new Typed('#typedDesktop', {
+        // stringsElement: '#typed-strings',
+        strings: welcomeArray,
+        typeSpeed: 40,
+        backDelay: 1000,
+        backSpeed: 10,
+        smartBackspace: true,
+    });
+//            snow effect
+//            $.fn.snow({ minSize: 1, maxSize: 7, newOn: 300, flakeColor: "#ffffff" });
+    $('#contactMe').modal('show');
+
 })(jQuery); // End of use strict
 
 
